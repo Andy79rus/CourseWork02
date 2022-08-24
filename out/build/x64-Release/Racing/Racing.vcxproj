@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0F695DBB-3FD3-3B6F-A8AB-FAD0332558EA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Racing</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Учеба\CourseWork02\out\build\x64-Release\Racing\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Racing.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Racing</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Учеба\CourseWork02\Racing\..\Racing;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";Racing_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";Racing_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Учеба\CourseWork02\Racing\..\Racing;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Учеба\CourseWork02\Racing\..\Racing;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Учеба\CourseWork02\out\build\x64-Release\Racing
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E __create_def C:/Учеба/CourseWork02/out/build/x64-Release/Racing/Racing.dir/Release/exports.def C:/Учеба/CourseWork02/out/build/x64-Release/Racing/Racing.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Учеба/CourseWork02/out/build/x64-Release/Racing/Release/Racing.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Учеба/CourseWork02/out/build/x64-Release/Racing/Racing.dir/Release/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Учеба/CourseWork02/out/build/x64-Release/Racing/Release/Racing.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Учеба\CourseWork02\Racing\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Учеба/CourseWork02/Racing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Учеба/CourseWork02 -BC:/Учеба/CourseWork02/out/build/x64-Release --check-stamp-file C:/Учеба/CourseWork02/out/build/x64-Release/Racing/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Учеба\CourseWork02\out\build\x64-Release\Racing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Учеба\CourseWork02\Racing\Air_transport.cpp" />
+    <ClInclude Include="C:\Учеба\CourseWork02\Racing\Air_transport.h" />
+    <ClCompile Include="C:\Учеба\CourseWork02\Racing\All_Terrain_Boots.cpp" />
+    <ClInclude Include="C:\Учеба\CourseWork02\Racing\All_Terrain_Boots.h" />
+    <ClCompile Include="C:\Учеба\CourseWork02\Racing\Broom.cpp" />
+    <ClInclude Include="C:\Учеба\CourseWork02\Racing\Broom.h" />
+    <ClCompile Include="C:\Учеба\CourseWork02\Racing\Camel.cpp" />
+    <ClInclude Include="C:\Учеба\CourseWork02\Racing\Camel.h" />
+    <ClCompile Include="C:\Учеба\CourseWork02\Racing\Centaur.cpp" />
+    <ClInclude Include="C:\Учеба\CourseWork02\Racing\Centaur.h" />
+    <ClCompile Include="C:\Учеба\CourseWork02\Racing\Eagle.cpp" />
+    <ClInclude Include="C:\Учеба\CourseWork02\Racing\Eagle.h" />
+    <ClCompile Include="C:\Учеба\CourseWork02\Racing\ErrorEx.cpp" />
+    <ClInclude Include="C:\Учеба\CourseWork02\Racing\ErrorEx.h" />
+    <ClCompile Include="C:\Учеба\CourseWork02\Racing\Ground_Transport.cpp" />
+    <ClInclude Include="C:\Учеба\CourseWork02\Racing\Ground_Transport.h" />
+    <ClCompile Include="C:\Учеба\CourseWork02\Racing\Magic_Carpet.cpp" />
+    <ClInclude Include="C:\Учеба\CourseWork02\Racing\Magic_Carpet.h" />
+    <ClCompile Include="C:\Учеба\CourseWork02\Racing\Race.cpp" />
+    <ClInclude Include="C:\Учеба\CourseWork02\Racing\Race.h" />
+    <ClCompile Include="C:\Учеба\CourseWork02\Racing\Speed_Camel.cpp" />
+    <ClInclude Include="C:\Учеба\CourseWork02\Racing\Speed_Camel.h" />
+    <ClCompile Include="C:\Учеба\CourseWork02\Racing\Transport.cpp" />
+    <ClInclude Include="C:\Учеба\CourseWork02\Racing\Transport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Учеба\CourseWork02\out\build\x64-Release\ZERO_CHECK.vcxproj">
+      <Project>{0375CF66-597A-34B6-8FDC-A467A74224C3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,129 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4
+					]
+				},
+				{
+					"build" : "Racing",
+					"jsonFile" : "directory-Racing-Release-2e503e64b90748745266.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Racing",
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CourseWork02",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Racing",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-dee7405971fb9274e122.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ALL_BUILD::@2545812f5d4fd2127376",
+					"jsonFile" : "target-ALL_BUILD-Release-bef4d4857973d8c9f57c.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CourseWork02::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CourseWork02-Release-63f7c35bdaa410c1c089.json",
+					"name" : "CourseWork02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Racing::@2545812f5d4fd2127376",
+					"jsonFile" : "target-Racing-Release-7f5fe81601f37273fec7.json",
+					"name" : "Racing",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-1f0335143a9dfc4e7ffa.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/\u0423\u0447\u0435\u0431\u0430/CourseWork02/out/build/x64-Release",
+		"source" : "C:/\u0423\u0447\u0435\u0431\u0430/CourseWork02"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

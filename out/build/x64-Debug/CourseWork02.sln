@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{B6D7BD36-D6AA-3D11-80C1-BE74E55F1DAA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0FAE43A5-D5F9-3579-B74D-7AFD65689F93} = {0FAE43A5-D5F9-3579-B74D-7AFD65689F93}
+		{20D397FD-4C18-3E4A-9BA9-514367CF9D0C} = {20D397FD-4C18-3E4A-9BA9-514367CF9D0C}
+		{EABD6FA2-C51E-3CD7-95D7-C283DCAA3D4F} = {EABD6FA2-C51E-3CD7-95D7-C283DCAA3D4F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CourseWork02", "CourseWork02.vcxproj", "{0FAE43A5-D5F9-3579-B74D-7AFD65689F93}"
+	ProjectSection(ProjectDependencies) = postProject
+		{20D397FD-4C18-3E4A-9BA9-514367CF9D0C} = {20D397FD-4C18-3E4A-9BA9-514367CF9D0C}
+		{EABD6FA2-C51E-3CD7-95D7-C283DCAA3D4F} = {EABD6FA2-C51E-3CD7-95D7-C283DCAA3D4F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Racing", "Racing\Racing.vcxproj", "{20D397FD-4C18-3E4A-9BA9-514367CF9D0C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EABD6FA2-C51E-3CD7-95D7-C283DCAA3D4F} = {EABD6FA2-C51E-3CD7-95D7-C283DCAA3D4F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{EABD6FA2-C51E-3CD7-95D7-C283DCAA3D4F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6D7BD36-D6AA-3D11-80C1-BE74E55F1DAA}.Debug|x64.ActiveCfg = Debug|x64
+		{0FAE43A5-D5F9-3579-B74D-7AFD65689F93}.Debug|x64.ActiveCfg = Debug|x64
+		{0FAE43A5-D5F9-3579-B74D-7AFD65689F93}.Debug|x64.Build.0 = Debug|x64
+		{20D397FD-4C18-3E4A-9BA9-514367CF9D0C}.Debug|x64.ActiveCfg = Debug|x64
+		{20D397FD-4C18-3E4A-9BA9-514367CF9D0C}.Debug|x64.Build.0 = Debug|x64
+		{EABD6FA2-C51E-3CD7-95D7-C283DCAA3D4F}.Debug|x64.ActiveCfg = Debug|x64
+		{EABD6FA2-C51E-3CD7-95D7-C283DCAA3D4F}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {727726DD-F231-3E6A-A68E-951C8B1E0247}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

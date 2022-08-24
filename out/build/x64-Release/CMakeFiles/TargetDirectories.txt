@@ -1,0 +1,5 @@
+C:/Учеба/CourseWork02/out/build/x64-Release/CMakeFiles/CourseWork02.dir
+C:/Учеба/CourseWork02/out/build/x64-Release/CMakeFiles/ALL_BUILD.dir
+C:/Учеба/CourseWork02/out/build/x64-Release/CMakeFiles/ZERO_CHECK.dir
+C:/Учеба/CourseWork02/out/build/x64-Release/Racing/CMakeFiles/Racing.dir
+C:/Учеба/CourseWork02/out/build/x64-Release/Racing/CMakeFiles/ALL_BUILD.dir
